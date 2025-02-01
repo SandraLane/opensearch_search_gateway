@@ -2,10 +2,10 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      python: 3.10
+      python: 3.9
   build:
     commands:
-      - aws cloudformation package --template-file search-gateway.yaml --s3-bucket artifacts-bucket-gl --output-template-file search.yaml
+      - aws cloudformation package --template-file search-gateway.yaml --s3-bucket artifactbucket012425 --output-template-file search-gateway.yaml
 
 artifacts:
   type: zip
